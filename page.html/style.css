@@ -1,13 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: #0d0b16;
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
+
 
 header {
     padding: 25px;
@@ -29,6 +33,11 @@ nav a {
     color: white;
     text-decoration: none;
     margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8b5cf6;
 }
 
 header button {
@@ -37,15 +46,25 @@ header button {
     background: #8b5cf6;
     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
+
+header button:hover {
+    background: #7c3aed;
+}
+
 
 main {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 h1 {
     font-size: 55px;
+    margin-bottom: 20px;
 }
 
 h1 span {
@@ -66,11 +85,44 @@ main img {
     border-radius: 10px;
 }
 
+
+.thongtin {
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 30px;
+    background: #15121f;
+    border-radius: 10px;
+    border: 1px solid #201c2b;
+}
+
+.thongtin h2 {
+    color: #8b5cf6;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #201c2b;
+    padding-bottom: 5px;
+}
+
+.thongtin h2:first-of-type {
+    margin-top: 0;
+}
+
+.thongtin p {
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.7;
+}
+
+
 .box {
     width: 500px;
     margin: 40px auto;
     padding: 15px;
     background: #201c2b;
+    border-radius: 8px;
 }
 
 input {
@@ -78,7 +130,8 @@ input {
     padding: 12px;
     background: #111;
     color: white;
-    border: none;
+    border: 1px solid #333;
+    border-radius: 4px;
 }
 
 .box button {
@@ -86,6 +139,8 @@ input {
     background: #8b5cf6;
     color: white;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .form {
@@ -93,15 +148,17 @@ input {
     margin: 40px auto;
     padding: 25px;
     background: #201c2b;
+    border-radius: 8px;
 }
 
 .form input {
     width: 90%;
-    margin: 10px;
+    margin: 10px 0;
     padding: 12px;
     background: #111;
     color: white;
-    border: none;
+    border: 1px solid #333;
+    border-radius: 4px;
 }
 
 .form button {
@@ -110,7 +167,10 @@ input {
     background: #8b5cf6;
     color: white;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 
 footer {
     margin-top: 50px;
@@ -127,4 +187,9 @@ footer h3 {
 footer p {
     margin-top: 5px;
     color: #aaa;
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
 }
